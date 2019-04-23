@@ -10,7 +10,7 @@ use AustinHeap\Database\Encryption\Traits\HasEncryptedAttributes;
 
 class Block extends BaseModel
 {
-    use HasMedias, HasFiles, HasPresenter, HasEnc, HasEncryptedAttributes;
+    use HasMedias, HasFiles, HasPresenter, HasEncryptedAttributes;
 
     public $timestamps = false;
 
