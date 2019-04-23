@@ -6,10 +6,11 @@ use A17\Twill\Models\Behaviors\HasFiles;
 use A17\Twill\Models\Behaviors\HasMedias;
 use A17\Twill\Models\Behaviors\HasPresenter;
 use Illuminate\Database\Eloquent\Model as BaseModel;
+use AustinHeap\Database\Encryption\Traits\HasEncryptedAttributes;
 
 class Block extends BaseModel
 {
-    use HasMedias, HasFiles, HasPresenter;
+    use HasMedias, HasFiles, HasPresenter, HasEnc, HasEncryptedAttributes;
 
     public $timestamps = false;
 
@@ -22,6 +23,10 @@ class Block extends BaseModel
         'child_key',
         'parent_id',
     ];
+
+	protected $encrypted = [
+		'content',
+	];
 
     protected $casts = [
         'content' => 'array',

@@ -1,5 +1,5 @@
 {
-  "name": "area17/twill",
+  "name": "mtrl/twill",
   "type": "library",
   "license": "Apache-2.0",
   "description": "Twill is an open source CMS toolkit for Laravel that helps developers rapidly create a custom admin console that is intuitive, powerful and flexible.",
@@ -48,6 +48,12 @@
       "role": "Backend developer"
     }
   ],
+  "repositories": [
+    {
+      "url": "git@github.com:mtrl/laravel-database-encryption.git",
+      "type": "git"
+    }
+  ],
   "require": {
     "php": "^7.0",
     "laravel/framework": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
@@ -63,7 +69,8 @@
     "spatie/laravel-analytics": "^3.6.0|^3.7.0",
     "spatie/laravel-activitylog": "^2.5|^3.2",
     "pragmarx/google2fa": "^4.0.0",
-    "pragmarx/google2fa-qrcode": "^1.0.2"
+    "pragmarx/google2fa-qrcode": "^1.0.2",
+    "mtrl/laravel-database-encryption": "^0.2.1"
   },
   "require-dev": {
     "phpunit/phpunit": "~5.0|~6.0|~7.0"
